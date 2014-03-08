@@ -11,7 +11,7 @@ function validarDatosRegistro(){
      * validar passwordr es igual a password
      * validar email
      */
-    $errores = array();
+    $resultadoalidacion[] = array();
     
     $login = (isset($_REQUEST['login']))? $_REQUEST['login']:"";
     $password = (isset($_REQUEST['password']))? $_REQUEST['password']:"";
@@ -19,17 +19,17 @@ function validarDatosRegistro(){
     $email = (isset($_REQUEST['email']))? $_REQUEST['email']:"";
     
     if (!validarLogin($login)){
-        $resultadoValidacion [] = MSG_ERR_LOGIN ;
+        $resultadoValidacion [0] = MSG_ERR_LOGIN ;
     }
     if (!validarPassword($password)){
-         $resultadoValidacion [] = MSG_ERR_PASSWORD ;
+         $resultadoValidacion [1] = MSG_ERR_PASSWORD ;
     }else{
         if($password != $passwordr){
-          $resultadoValidacion [] = MSG_ERR_PASSWORD2 ;
+          $resultadoValidacion [2] = MSG_ERR_PASSWORD2 ;
         }
     }
     if (!validarEmail($email)){
-        $resultadoValidacion [] = MSG_ERR_EMAIL;
+        $resultadoValidacion [3] = MSG_ERR_EMAIL;
     }
     
     return $resultadoValidacion;

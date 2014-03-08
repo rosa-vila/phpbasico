@@ -6,16 +6,15 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Cálculo IMC</title>
+        <title>INVENTARIO 2</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <div>Formulario IMC</div>
-        <form action="resultadoIMC_1.php" method="GET">
-            <p>Peso: <input type="text" name="masa" /> Kilogramos</p>
-            <p>Estatura <input type="text" name="estatura" /> Centimetross</p>
-            <p><input type="submit" value="Enviar" /></p>
-        </form>
+        <div>INVENTARIO 2</div>
+        <div>Acceso a Listado de Favoritos </div>
+        <div>
+            <a href="listado_software.php">Enlace a Software</a>
+        </div>
     </body>
 </html>
