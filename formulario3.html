@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div>Formulario3</div>
+        <form action="resultado3.php" method="GET">
+            <p>Nombre: <input type="text" name="nombre" /></p>
+            <p>Edad: <input type="text" name="edad" /></p>
+            <p>Solicita beca: <input type="checkbox" name="beca"/></p>
+            <p>Sexo</br> 
+                <input type="radio" name="sexo" value="M"/>Masculino
+                <input type="radio" name="sexo" value="F"/>Femenino           
+            </p>
+            <p>Estado civil
+                <select name="estado">
+                    <option selected="selected" disabled="disabled" >Seleccionar...</option>
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                    <option>Divorciado</option>
+                    <option>otros</option>
+                </select>
+            </p>
+             <p>Aficiones
+                <select name="aficiones" size="3" multiple="multiple">
+                    <option>Deportes</option>
+                    <option>Cine</option>
+                    <option>TV</option>
+                    <option>Lectura</option>
+                    <option>otros</option>
+                </select>
+             </p>
+            <p><input type="submit" value="Enviar" /></p>
+        </form>
+    </body>
+</html>
